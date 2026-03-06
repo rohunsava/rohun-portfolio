@@ -313,6 +313,81 @@ body {
   font-size: 1.1rem;
 }
 
+.tools-showcase {
+  margin-top: 1rem;
+  border-radius: calc(var(--radius) + 2px);
+  border: 1px solid var(--line);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.96), rgba(200, 216, 228, 0.32));
+  box-shadow: var(--shadow);
+  padding: 1.2rem;
+}
+
+.tools-showcase-head h3 {
+  margin: 0;
+  font-family: "Sora", "Avenir Next", sans-serif;
+  font-size: clamp(1.02rem, 2.3vw, 1.45rem);
+  color: var(--accent);
+  max-width: 46ch;
+}
+
+.tools-showcase-head .eyebrow {
+  margin-bottom: 0.5rem;
+}
+
+.tools-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.tool-card {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid rgba(43, 103, 119, 0.28);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.98), rgba(242, 242, 242, 0.97));
+  padding: 0.65rem;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 25px rgba(43, 103, 119, 0.16);
+  border-color: rgba(82, 171, 152, 0.56);
+}
+
+.tool-photo {
+  border-radius: 12px;
+  border: 1px solid rgba(43, 103, 119, 0.22);
+  min-height: 130px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 22% 14%, rgba(82, 171, 152, 0.24), rgba(82, 171, 152, 0) 54%),
+    radial-gradient(circle at 84% 88%, rgba(200, 216, 228, 0.76), rgba(200, 216, 228, 0) 56%),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.98), rgba(242, 242, 242, 0.98));
+}
+
+.tool-photo img {
+  width: clamp(50px, 5.5vw, 68px);
+  height: clamp(50px, 5.5vw, 68px);
+  object-fit: contain;
+  filter: drop-shadow(0 7px 10px rgba(43, 103, 119, 0.18));
+}
+
+.tool-card h4 {
+  margin: 0.72rem 0 0;
+  font-family: "Sora", "Avenir Next", sans-serif;
+  font-size: 0.95rem;
+}
+
+.tool-card p {
+  margin: 0.36rem 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
 .info-grid {
   margin-top: 1rem;
   display: grid;
@@ -626,6 +701,10 @@ body {
   .projects-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .tools-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
@@ -640,6 +719,10 @@ body {
 
   .info-grid,
   .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-grid {
     grid-template-columns: 1fr;
   }
 
