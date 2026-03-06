@@ -10,9 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./project-doc.css?v=20260306-2710" />
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem("rohun-theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (_) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="./project-doc.css?v=20260306-2805" />
   </head>
   <body>
+    <button class="doc-theme-toggle" id="doc-theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">Dark Mode</button>
     <main class="container doc-wrap">
       <p class="eyebrow">Project Documentation</p>
       <h1>Fantasy Basketball Calculator</h1>
@@ -31,5 +42,30 @@
         </div>
       </article>
     </main>
+      <script>
+      (() => {
+        const key = "rohun-theme";
+        const root = document.documentElement;
+        const toggle = document.getElementById("doc-theme-toggle");
+        if (!toggle) return;
+
+        const setLabel = (theme) => {
+          toggle.textContent = theme === "dark" ? "Light Mode" : "Dark Mode";
+          toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+        };
+
+        const getTheme = () => (root.getAttribute("data-theme") === "dark" ? "dark" : "light");
+        setLabel(getTheme());
+
+        toggle.addEventListener("click", () => {
+          const nextTheme = getTheme() === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", nextTheme);
+          try {
+            localStorage.setItem(key, nextTheme);
+          } catch (_) {}
+          setLabel(nextTheme);
+        });
+      })();
+    </script>
   </body>
 </html>

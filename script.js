@@ -1,3 +1,47 @@
+const THEME_KEY = "rohun-theme";
+const rootElement = document.documentElement;
+const themeToggle = document.getElementById("theme-toggle");
+
+function resolveTheme() {
+  const active = rootElement.getAttribute("data-theme");
+  if (active === "dark" || active === "light") {
+    return active;
+  }
+
+  try {
+    const stored = localStorage.getItem(THEME_KEY);
+    if (stored === "dark" || stored === "light") {
+      return stored;
+    }
+  } catch (_) {}
+
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function setTheme(theme) {
+  rootElement.setAttribute("data-theme", theme);
+
+  if (themeToggle) {
+    themeToggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+    const label = themeToggle.querySelector(".theme-toggle-text");
+    if (label) {
+      label.textContent = theme === "dark" ? "Light" : "Dark";
+    }
+  }
+}
+
+setTheme(resolveTheme());
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const nextTheme = rootElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    try {
+      localStorage.setItem(THEME_KEY, nextTheme);
+    } catch (_) {}
+    setTheme(nextTheme);
+  });
+}
+
 const projects = [
   {
     name: "Personal Portfolio",

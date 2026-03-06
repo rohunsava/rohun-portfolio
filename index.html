@@ -27,8 +27,18 @@
         rel="stylesheet"
       />
     </noscript>
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem("rohun-theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (_) {}
+      })();
+    </script>
     <link rel="preload" as="image" href="./assets/generated/portrait-clean-neutral.jpg" />
-    <link rel="stylesheet" href="./styles.css?v=20260306-2726" />
+    <link rel="stylesheet" href="./styles.css?v=20260306-2805" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -45,6 +55,10 @@
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
         </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
         <a class="btn btn-small" href="#contact">Get In Touch</a>
       </div>
     </header>
@@ -402,6 +416,6 @@
       <p class="footer-note">(c) <span id="year"></span> Rohun Savanur</p>
     </footer>
 
-    <script src="./script.js?v=20260306-2742"></script>
+    <script src="./script.js?v=20260306-2805"></script>
   </body>
 </html>

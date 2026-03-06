@@ -17,6 +17,24 @@
   --shadow: 0 16px 35px rgba(21, 77, 87, 0.14);
 }
 
+:root[data-theme="dark"] {
+  --bg: #0f1519;
+  --bg-soft: #121c22;
+  --surface: rgba(19, 30, 37, 0.92);
+  --surface-strong: #18232a;
+  --line: rgba(127, 191, 202, 0.28);
+  --text: #f4f8f9;
+  --muted: rgba(213, 230, 235, 0.88);
+  --accent: #78c6cf;
+  --accent-soft: #cf9a71;
+  --accent-2: #5db2bc;
+  --heading-brown: #cf9a71;
+  --body-green: #bee7ec;
+  --focus-ring: #ffffff;
+  --focus-ring-gap: #000000;
+  --shadow: 0 16px 35px rgba(0, 0, 0, 0.45);
+}
+
 *,
 *::before,
 *::after {
@@ -70,6 +88,13 @@ body {
     linear-gradient(160deg, var(--bg) 0%, var(--bg-soft) 50%, #FEFAF7 100%);
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+:root[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at 15% -22%, rgba(120, 198, 207, 0.22) 0%, rgba(120, 198, 207, 0) 42%),
+    radial-gradient(circle at 102% 15%, rgba(18, 28, 34, 0.72) 0%, rgba(18, 28, 34, 0) 40%),
+    linear-gradient(160deg, #0f1519 0%, #121c22 50%, #11181d 100%);
 }
 
 .container {
@@ -132,6 +157,11 @@ body {
   border-bottom: 1px solid rgba(21, 77, 87, 0.17);
 }
 
+:root[data-theme="dark"] .site-header {
+  background: rgba(10, 17, 22, 0.86);
+  border-bottom-color: rgba(120, 198, 207, 0.25);
+}
+
 .nav-wrap {
   display: flex;
   align-items: center;
@@ -151,6 +181,50 @@ body {
 .main-nav {
   display: flex;
   gap: 1.2rem;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.44rem;
+  border: 1px solid rgba(21, 77, 87, 0.28);
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 0.46rem 0.72rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+  border-color: rgba(21, 77, 87, 0.5);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+:root[data-theme="dark"] .theme-toggle {
+  border-color: rgba(120, 198, 207, 0.34);
+  background: rgba(16, 25, 31, 0.9);
+  color: #dff5f8;
+}
+
+:root[data-theme="dark"] .theme-toggle:hover {
+  border-color: rgba(120, 198, 207, 0.56);
+  background: rgba(21, 33, 40, 0.95);
+}
+
+.theme-toggle-icon {
+  width: 0.68rem;
+  height: 0.68rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 2px rgba(21, 77, 87, 0.16);
+}
+
+.theme-toggle-text {
+  line-height: 1;
 }
 
 .main-nav a {
@@ -823,6 +897,60 @@ body {
   font-size: 0.86rem;
 }
 
+:root[data-theme="dark"] .profile-card,
+:root[data-theme="dark"] .hero-metrics li,
+:root[data-theme="dark"] .tools-showcase,
+:root[data-theme="dark"] .tool-card,
+:root[data-theme="dark"] .glass-card,
+:root[data-theme="dark"] .project-card,
+:root[data-theme="dark"] .project-preview-card,
+:root[data-theme="dark"] .footer,
+:root[data-theme="dark"] .experience-logo-wrap {
+  background: linear-gradient(160deg, rgba(19, 30, 37, 0.98), rgba(14, 22, 28, 0.98));
+}
+
+:root[data-theme="dark"] .btn-ghost {
+  background: rgba(18, 28, 34, 0.9);
+  border-color: rgba(120, 198, 207, 0.42);
+  color: #def6f9;
+}
+
+:root[data-theme="dark"] .photo-fallback {
+  background: linear-gradient(145deg, #1a2730, #10181d);
+}
+
+:root[data-theme="dark"] .tool-photo {
+  border-color: rgba(120, 198, 207, 0.28);
+  background:
+    radial-gradient(circle at 22% 14%, rgba(120, 198, 207, 0.2), rgba(120, 198, 207, 0) 54%),
+    radial-gradient(circle at 84% 88%, rgba(18, 28, 34, 0.75), rgba(18, 28, 34, 0) 56%),
+    linear-gradient(140deg, rgba(22, 33, 40, 0.98), rgba(15, 23, 29, 0.98));
+}
+
+:root[data-theme="dark"] .chip-list span,
+:root[data-theme="dark"] .experience-skills span,
+:root[data-theme="dark"] .project-tags span,
+:root[data-theme="dark"] .project-date,
+:root[data-theme="dark"] .experience-outcomes li {
+  background: rgba(22, 33, 40, 0.9);
+  border-color: rgba(120, 198, 207, 0.32);
+}
+
+:root[data-theme="dark"] .preview-placeholder {
+  border-color: rgba(120, 198, 207, 0.44);
+  background: linear-gradient(125deg, rgba(120, 198, 207, 0.25), rgba(120, 198, 207, 0.14));
+}
+
+:root[data-theme="dark"] .cert-link:hover,
+:root[data-theme="dark"] .contact-links a:hover {
+  border-color: rgba(120, 198, 207, 0.72);
+}
+
+:root[data-theme="dark"] .page-noise {
+  opacity: 0.08;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 0.5px, transparent 0.5px);
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -877,6 +1005,16 @@ body {
 @media (max-width: 720px) {
   .site-header {
     position: static;
+  }
+
+  .theme-toggle-text {
+    display: none;
+  }
+
+  .theme-toggle {
+    padding: 0.5rem;
+    min-width: 2rem;
+    justify-content: center;
   }
 
   .hero {
