@@ -9,6 +9,10 @@
   --accent: #154d57;
   --accent-soft: #7A4A29;
   --accent-2: #154d57;
+  --heading-brown: #7A4A29;
+  --body-green: #154d57;
+  --focus-ring: #000000;
+  --focus-ring-gap: #ffffff;
   --radius: 20px;
   --shadow: 0 16px 35px rgba(21, 77, 87, 0.14);
 }
@@ -21,6 +25,40 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.7rem;
+  left: 0.7rem;
+  z-index: 1000;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 0.58rem 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transform: translateY(-170%);
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+:where(
+    a,
+    button,
+    [tabindex]:not([tabindex="-1"]),
+    input,
+    select,
+    textarea,
+    summary
+  ):focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: 8px;
 }
 
 body {
@@ -142,6 +180,10 @@ body {
   color: var(--text);
 }
 
+.main-nav a:focus-visible {
+  color: var(--text);
+}
+
 .main-nav a:hover::after,
 .main-nav a:focus-visible::after {
   transform: scaleX(1);
@@ -166,6 +208,14 @@ body {
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 26px rgba(21, 77, 87, 0.26);
+}
+
+.btn:focus-visible,
+.project-doc-btn:focus-visible {
+  box-shadow:
+    0 0 0 3px var(--focus-ring-gap),
+    0 0 0 6px var(--focus-ring),
+    0 14px 24px rgba(21, 77, 87, 0.24);
 }
 
 .btn-ghost {
@@ -208,6 +258,7 @@ body {
 
 .profile-photo {
   width: 100%;
+  height: auto;
   display: block;
   border-radius: calc(var(--radius) - 2px);
   aspect-ratio: 4 / 5;
@@ -237,7 +288,7 @@ body {
 }
 
 .hero .eyebrow {
-  color: #7A4A29;
+  color: var(--heading-brown);
 }
 
 .hero-title {
@@ -315,16 +366,16 @@ body {
   margin: 0;
   font-family: "Sora", "Avenir Next", sans-serif;
   font-size: clamp(1.5rem, 4vw, 2.2rem);
-  color: #154d57;
+  color: var(--heading-brown);
 }
 
 .section-head p {
-  color: var(--muted);
+  color: var(--body-green);
   margin: 0;
 }
 
 .section-head .eyebrow {
-  color: #7A4A29;
+  color: var(--heading-brown);
 }
 
 .about-summary {
@@ -412,7 +463,7 @@ body {
   filter: drop-shadow(0 7px 10px rgba(21, 77, 87, 0.18));
 }
 
-.tool-card h4 {
+.tool-card h3 {
   margin: 0.72rem 0 0;
   font-family: "Sora", "Avenir Next", sans-serif;
   font-size: 0.95rem;
@@ -505,6 +556,29 @@ body {
   margin: 0.35rem 0 0;
   color: var(--muted);
   line-height: 1.65;
+}
+
+.experience-outcomes {
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.experience-outcomes li {
+  border-radius: 11px;
+  border: 1px solid rgba(21, 77, 87, 0.2);
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--accent);
+  padding: 0.45rem 0.6rem;
+  font-size: 0.78rem;
+  line-height: 1.38;
+}
+
+.experience-outcomes strong {
+  color: var(--heading-brown);
 }
 
 .role-meta {
@@ -613,34 +687,39 @@ body {
   letter-spacing: 0.02em;
 }
 
-.preview-copy {
-  margin: 0.6rem 0 0;
-  color: var(--muted);
+.preview-list {
+  margin: 0.58rem 0 0;
 }
 
-.preview-label {
-  margin: 0.55rem 0 0;
-  color: var(--accent);
-  font-size: 0.74rem;
+.preview-row {
+  margin-top: 0.35rem;
+  padding-top: 0.35rem;
+  display: grid;
+  grid-template-columns: minmax(86px, auto) minmax(0, 1fr);
+  gap: 0.5rem;
+  border-top: 1px dashed rgba(21, 77, 87, 0.22);
+}
+
+.preview-row:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.preview-row dt {
+  margin: 0;
+  color: var(--heading-brown);
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
 }
 
-.audience-badges {
-  margin-top: 0.35rem;
-  display: flex;
-  gap: 0.35rem;
-  flex-wrap: wrap;
-}
-
-.audience-badges span {
-  padding: 0.24rem 0.52rem;
-  border-radius: 999px;
-  font-size: 0.72rem;
-  color: var(--accent);
-  background: rgba(254, 250, 247, 0.58);
-  border: 1px solid rgba(21, 77, 87, 0.3);
+.preview-row dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.77rem;
+  line-height: 1.45;
 }
 
 .project-tags {
@@ -723,6 +802,11 @@ body {
 
 .contact-links a:hover {
   border-color: rgba(21, 77, 87, 0.7);
+}
+
+.contact-links a:focus-visible,
+.cert-link:focus-visible {
+  border-color: #000000;
 }
 
 .footer-note {
@@ -808,6 +892,10 @@ body {
   .experience-head {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .experience-outcomes {
+    grid-template-columns: 1fr;
   }
 
   .experience-logo-wrap {

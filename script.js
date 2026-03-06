@@ -6,10 +6,11 @@ const projects = [
       "Designed and developed a modern personal landing page to present analytics experience, skills, and upcoming project portfolio work.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive UI"],
     href: "./projects/personal-data-analyst-landing-page.html",
-    preview:
-      "Preview: Scope, design decisions, implementation notes, deployment workflow, and upcoming iteration log.",
     placeholder: "Portfolio UI Preview",
-    audience: ["Hiring Teams", "Recruiters", "Stakeholders"]
+    users: "Hiring teams, recruiters, and collaborators",
+    dataSources: "LinkedIn profile data, resume content, and project planning notes",
+    methods: "Responsive UI architecture, accessibility-first CSS, and interaction design",
+    outcome: "Deployed a polished portfolio experience with clear navigation and strong conversion flow"
   },
   {
     name: "Fantasy Basketball Calculator",
@@ -18,10 +19,11 @@ const projects = [
       "Built an interactive fantasy basketball calculator to evaluate roster value, compare trade outcomes, and optimize category-based decision making, and completed the first full release in May 2025.",
     tags: ["JavaScript", "Data Modeling", "Sports Analytics", "Decision Support"],
     href: "./projects/fantasy-basketball-calculator.html",
-    preview:
-      "Preview: scoring logic, player valuation approach, simulation assumptions, and upcoming calculator screenshots.",
     placeholder: "Fantasy Calculator Preview",
-    audience: ["Fantasy Basketball Players", "League Managers", "Analytics Users"]
+    users: "Fantasy basketball players, league managers, and strategy-focused users",
+    dataSources: "Player statistics, league scoring rules, and historical matchup context",
+    methods: "Weighted category scoring, normalization logic, and scenario-based comparison",
+    outcome: "Completed a decision-support tool that improves lineup, waiver, and trade evaluation speed"
   }
 ];
 
@@ -34,11 +36,24 @@ if (projectsGrid) {
     card.innerHTML = `
       <div class="project-preview-card" aria-hidden="true">
         <div class="preview-placeholder">${project.placeholder}</div>
-        <p class="preview-copy">${project.preview}</p>
-        <p class="preview-label">Clients / Users</p>
-        <div class="audience-badges">
-          ${project.audience.map((item) => `<span>${item}</span>`).join("")}
-        </div>
+        <dl class="preview-list">
+          <div class="preview-row">
+            <dt>Users</dt>
+            <dd>${project.users}</dd>
+          </div>
+          <div class="preview-row">
+            <dt>Data sources</dt>
+            <dd>${project.dataSources}</dd>
+          </div>
+          <div class="preview-row">
+            <dt>Methods</dt>
+            <dd>${project.methods}</dd>
+          </div>
+          <div class="preview-row">
+            <dt>Outcome</dt>
+            <dd>${project.outcome}</dd>
+          </div>
+        </dl>
       </div>
       <div class="project-top">
         <span class="project-date">${project.started}</span>

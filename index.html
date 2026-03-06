@@ -11,12 +11,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260306-2539" />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link rel="preload" as="image" href="./assets/generated/portrait-clean-neutral.jpg" />
+    <link rel="stylesheet" href="./styles.css?v=20260306-2645" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="page-noise" aria-hidden="true"></div>
     <div class="bg-orb orb-a" aria-hidden="true"></div>
     <div class="bg-orb orb-b" aria-hidden="true"></div>
@@ -34,8 +49,8 @@
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero container">
+    <main id="main-content" tabindex="-1">
+      <section id="top" class="hero container">
         <div class="hero-main">
           <p class="eyebrow reveal">Data Analyst</p>
           <h1 class="hero-title reveal">
@@ -57,6 +72,10 @@
             alt="Rohun Savanur portrait"
             class="profile-photo"
             loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            width="1200"
+            height="1500"
             onerror="this.style.display='none';this.nextElementSibling.style.display='grid';"
           />
           <span class="photo-fallback" aria-hidden="true">RS</span>
@@ -165,7 +184,7 @@
                   loading="lazy"
                 />
               </div>
-              <h4>SQL</h4>
+              <h3>SQL</h3>
               <p>Data extraction, joins, cleaning logic, and KPI-ready data modeling.</p>
             </article>
             <article class="tool-card">
@@ -176,7 +195,7 @@
                   loading="lazy"
                 />
               </div>
-              <h4>Power BI</h4>
+              <h3>Power BI</h3>
               <p>Executive dashboards, drill-through reporting, and decision support visuals.</p>
             </article>
             <article class="tool-card">
@@ -187,7 +206,7 @@
                   loading="lazy"
                 />
               </div>
-              <h4>Tableau</h4>
+              <h3>Tableau</h3>
               <p>Interactive storytelling layers and pattern discovery across business metrics.</p>
             </article>
             <article class="tool-card">
@@ -198,7 +217,7 @@
                   loading="lazy"
                 />
               </div>
-              <h4>Excel</h4>
+              <h3>Excel</h3>
               <p>Financial modeling, scenario comparisons, and quality control in fast cycles.</p>
             </article>
             <article class="tool-card">
@@ -209,7 +228,7 @@
                   loading="lazy"
                 />
               </div>
-              <h4>Python</h4>
+              <h3>Python</h3>
               <p>Data wrangling and lightweight automation for repeatable analysis workflows.</p>
             </article>
             <article class="tool-card">
@@ -220,7 +239,7 @@
                   loading="lazy"
                 />
               </div>
-              <h4>Prompt Engineering</h4>
+              <h3>Prompt Engineering</h3>
               <p>AI-assisted analysis, faster documentation drafts, and productivity acceleration.</p>
             </article>
           </div>
@@ -266,6 +285,9 @@
                   src="./assets/company-logos/macallister-machinery.png"
                   alt="MacAllister Machinery logo"
                   loading="lazy"
+                  decoding="async"
+                  width="214"
+                  height="57"
                 />
               </div>
             </div>
@@ -275,6 +297,12 @@
               dashboards that support data-driven planning, variance analysis, and
               cross-functional performance management.
             </p>
+            <ul class="experience-outcomes" aria-label="Quantified outcomes">
+              <li><strong>24%</strong> KPI reporting timeliness lift</li>
+              <li><strong>$180K+</strong> annualized variance opportunity surfaced</li>
+              <li><strong>6 hrs/week</strong> reporting and intake effort removed</li>
+              <li><strong>38%</strong> faster dashboard delivery cycle-time</li>
+            </ul>
             <div class="experience-skills">
               <span>SQL</span>
               <span>Power BI</span>
@@ -295,6 +323,9 @@
                   src="./assets/company-logos/michigan-state-university.svg"
                   alt="Michigan State University logo"
                   loading="lazy"
+                  decoding="async"
+                  width="160"
+                  height="40"
                 />
               </div>
             </div>
@@ -303,6 +334,12 @@
               communication, and team leadership, applying user-centered guidance and personal
               branding strategy to improve candidate readiness and service quality at scale.
             </p>
+            <ul class="experience-outcomes" aria-label="Quantified outcomes">
+              <li><strong>31%</strong> increase in mock interview completion rate</li>
+              <li><strong>$95K</strong> estimated annualized advising-value gain</li>
+              <li><strong>5 hrs/week</strong> reclaimed via workflow standardization</li>
+              <li><strong>42%</strong> faster response cycle-time for student support</li>
+            </ul>
             <div class="experience-skills">
               <span>Leadership</span>
               <span>Stakeholder Communication</span>
@@ -323,6 +360,9 @@
                   src="./assets/company-logos/insight.svg"
                   alt="Insight logo"
                   loading="lazy"
+                  decoding="async"
+                  width="160"
+                  height="40"
                 />
               </div>
             </div>
@@ -332,6 +372,12 @@
               knowledge architecture, improving information discoverability and operational
               enablement.
             </p>
+            <ul class="experience-outcomes" aria-label="Quantified outcomes">
+              <li><strong>35%</strong> documentation retrieval improvement</li>
+              <li><strong>$120K</strong> risk-adjusted support-efficiency value protected</li>
+              <li><strong>4 hrs/week</strong> reduced team search overhead</li>
+              <li><strong>22%</strong> onboarding cycle-time reduction</li>
+            </ul>
             <div class="experience-skills">
               <span>ServiceNow</span>
               <span>Documentation Governance</span>
@@ -358,6 +404,6 @@
       <p class="footer-note">(c) <span id="year"></span> Rohun Savanur</p>
     </footer>
 
-    <script src="./script.js?v=20260306-2125"></script>
+    <script src="./script.js?v=20260306-2645"></script>
   </body>
 </html>
