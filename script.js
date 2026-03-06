@@ -42,7 +42,7 @@ if (projectsGrid) {
             <dd>${project.users}</dd>
           </div>
           <div class="preview-row">
-            <dt>Data sources</dt>
+            <dt>Data</dt>
             <dd>${project.dataSources}</dd>
           </div>
           <div class="preview-row">
