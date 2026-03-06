@@ -290,12 +290,16 @@ body {
   margin: 0;
   font-family: "Sora", "Avenir Next", sans-serif;
   font-size: clamp(1.5rem, 4vw, 2.2rem);
-  color: #B7A08B;
+  color: #154d57;
 }
 
 .section-head p {
   color: var(--muted);
   margin: 0;
+}
+
+.section-head .eyebrow {
+  color: #B7A08B;
 }
 
 .glass-card {
