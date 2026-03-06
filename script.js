@@ -1,8 +1,7 @@
 const projects = [
   {
     name: "Personal Data Analyst Landing Page",
-    status: "Live",
-    statusClass: "status-live",
+    started: "Mar 2026",
     summary:
       "Designed and developed a modern personal landing page to present analytics experience, skills, and upcoming project portfolio work.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive UI"],
@@ -14,10 +13,9 @@ const projects = [
   },
   {
     name: "Fantasy Basketball Calculator",
-    status: "In Progress",
-    statusClass: "status-progress",
+    started: "May 2025",
     summary:
-      "Building an interactive fantasy basketball calculator to evaluate roster value, compare trade outcomes, and optimize category-based decision making.",
+      "Built an interactive fantasy basketball calculator to evaluate roster value, compare trade outcomes, and optimize category-based decision making, and completed the first full release in May 2025.",
     tags: ["JavaScript", "Data Modeling", "Sports Analytics", "Decision Support"],
     href: "./projects/fantasy-basketball-calculator.html",
     preview:
@@ -43,7 +41,7 @@ if (projectsGrid) {
         </div>
       </div>
       <div class="project-top">
-        <span class="status ${project.statusClass}">${project.status}</span>
+        <span class="project-date">Started: ${project.started}</span>
       </div>
       <h3>${project.name}</h3>
       <p>${project.summary}</p>
