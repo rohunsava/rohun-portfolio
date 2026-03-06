@@ -13,43 +13,17 @@ const projects = [
     audience: ["Hiring Teams", "Recruiters", "Stakeholders"]
   },
   {
-    name: "Service KPI Intelligence Dashboard",
+    name: "Fantasy Basketball Calculator",
     status: "In Progress",
     statusClass: "status-progress",
     summary:
-      "Analyzing service, labor, and parts performance data with interactive dashboards to surface trends, bottlenecks, and branch-level opportunities.",
-    tags: ["Power BI", "SQL", "KPI Reporting"],
-    href: "./projects/service-kpi-intelligence-dashboard.html",
+      "Building an interactive fantasy basketball calculator to evaluate roster value, compare trade outcomes, and optimize category-based decision making.",
+    tags: ["JavaScript", "Data Modeling", "Sports Analytics", "Decision Support"],
+    href: "./projects/fantasy-basketball-calculator.html",
     preview:
-      "Preview: KPI framework, metric definitions, data model approach, and phased dashboard roadmap.",
-    placeholder: "KPI Dashboard Mock",
-    audience: ["Service Leaders", "Operations", "BI Team"]
-  },
-  {
-    name: "Cost Variance & Expense Insights Model",
-    status: "Planned",
-    statusClass: "status-planned",
-    summary:
-      "Planned deep-dive analysis of expense and variance patterns with scenario modeling to support budget forecasting and management decisions.",
-    tags: ["Excel", "Financial Analysis", "Forecasting"],
-    href: "./projects/cost-variance-expense-insights-model.html",
-    preview:
-      "Preview: variance drivers, forecast assumptions, scenario logic, and decision-ready reporting outputs.",
-    placeholder: "Variance Model Preview",
-    audience: ["Finance", "Branch Managers", "Executives"]
-  },
-  {
-    name: "Technician Training Impact Analysis",
-    status: "Planned",
-    statusClass: "status-planned",
-    summary:
-      "Future project to evaluate how training allocation influences service productivity and operational outcomes across teams.",
-    tags: ["Operational Analytics", "Data Storytelling", "Visualization"],
-    href: "./projects/technician-training-impact-analysis.html",
-    preview:
-      "Preview: workforce effectiveness indicators, before-and-after analysis design, and implementation plan.",
-    placeholder: "Impact Analysis Preview",
-    audience: ["Product Support", "Training Teams", "Leadership"]
+      "Preview: scoring logic, player valuation approach, simulation assumptions, and upcoming calculator screenshots.",
+    placeholder: "Fantasy Calculator Preview",
+    audience: ["Fantasy Basketball Players", "League Managers", "Analytics Users"]
   }
 ];
 

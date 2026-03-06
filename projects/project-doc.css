@@ -7,10 +7,10 @@
 body {
   margin: 0;
   font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
-  color: #112f3f;
-  background: radial-gradient(circle at 20% -20%, #c4e8ef 0%, rgba(196, 232, 239, 0) 44%),
-    radial-gradient(circle at 110% 15%, #ffe1d3 0%, rgba(255, 225, 211, 0) 40%),
-    linear-gradient(160deg, #eef7f9 0%, #e5f1f4 52%, #f8fbfc 100%);
+  color: #000000;
+  background: radial-gradient(circle at 16% -24%, rgba(82, 171, 152, 0.23) 0%, rgba(82, 171, 152, 0) 43%),
+    radial-gradient(circle at 105% 12%, rgba(200, 216, 228, 0.75) 0%, rgba(200, 216, 228, 0) 41%),
+    linear-gradient(160deg, #f2f2f2 0%, #ffffff 52%, #f2f2f2 100%);
   min-height: 100vh;
 }
 
@@ -27,7 +27,7 @@ body {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #116e85;
+  color: #2b6777;
   font-size: 0.74rem;
   font-weight: 700;
 }
@@ -40,23 +40,35 @@ h1 {
 
 .doc-card {
   margin-top: 1.5rem;
-  border: 1px solid rgba(36, 85, 108, 0.15);
+  border: 1px solid rgba(43, 103, 119, 0.2);
   border-radius: 20px;
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.82), rgba(244, 250, 253, 0.96));
-  box-shadow: 0 16px 34px rgba(23, 62, 82, 0.14);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(242, 242, 242, 0.98));
+  box-shadow: 0 16px 34px rgba(43, 103, 119, 0.14);
   padding: 1.35rem;
+  position: relative;
+}
+
+.doc-card::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  top: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2b6777, #52ab98, #c8d8e4);
 }
 
 .doc-card p {
   margin: 0;
-  color: #4a6473;
+  color: rgba(43, 103, 119, 0.88);
   line-height: 1.7;
 }
 
 .doc-list {
   margin: 1rem 0 0;
   padding-left: 1.1rem;
-  color: #4a6473;
+  color: rgba(43, 103, 119, 0.88);
 }
 
 .doc-list li + li {
@@ -79,12 +91,12 @@ h1 {
   text-decoration: none;
   font-weight: 600;
   padding: 0.66rem 1rem;
-  background: linear-gradient(118deg, #1098b1, #ff8d6a);
-  color: #fff;
+  background: linear-gradient(118deg, #2b6777, #52ab98);
+  color: #ffffff;
 }
 
 .btn-ghost {
-  color: #184b5f;
-  border-color: rgba(55, 107, 131, 0.24);
-  background: rgba(255, 255, 255, 0.65);
+  color: #2b6777;
+  border-color: rgba(43, 103, 119, 0.24);
+  background: rgba(255, 255, 255, 0.7);
 }
