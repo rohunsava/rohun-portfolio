@@ -164,6 +164,45 @@ body {
 
 .hero {
   padding: 7rem 0 3.6rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: 1.3rem 1.8rem;
+  align-items: start;
+}
+
+.hero-main {
+  min-width: 0;
+}
+
+.profile-card {
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.74), rgba(241, 249, 252, 0.92));
+  box-shadow: var(--shadow);
+  padding: 0.65rem;
+  justify-self: end;
+  width: min(370px, 100%);
+}
+
+.profile-photo {
+  width: 100%;
+  display: block;
+  border-radius: calc(var(--radius) - 2px);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 26%;
+}
+
+.photo-fallback {
+  display: none;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: calc(var(--radius) - 2px);
+  font-family: "Sora", "Avenir Next", sans-serif;
+  font-size: clamp(2.8rem, 7vw, 4.5rem);
+  color: #0f3f53;
+  background: linear-gradient(145deg, #d8eef4, #f1f8fb);
 }
 
 .eyebrow {
@@ -214,6 +253,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.9rem;
+  grid-column: 1 / -1;
 }
 
 .hero-metrics li {
@@ -460,7 +500,18 @@ body {
     display: none;
   }
 
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .profile-card {
+    justify-self: start;
+    width: min(350px, 100%);
+  }
+
   .hero-metrics {
+    margin-top: 1rem;
     grid-template-columns: 1fr;
   }
 
@@ -477,6 +528,7 @@ body {
 
   .hero {
     padding-top: 3.5rem;
+    grid-template-columns: 1fr;
   }
 
   .info-grid,

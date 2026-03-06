@@ -44,3 +44,9 @@ With this repo, these buttons deploy instantly:
 ## Updating Projects
 
 Edit `projects` in `script.js` and add new objects for each analysis project.
+
+## Profile Photo
+
+Put your headshot at:
+
+`assets/profile-photo.jpg`
