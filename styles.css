@@ -7,7 +7,7 @@
   --text: #000000;
   --muted: rgba(21, 77, 87, 0.86);
   --accent: #154d57;
-  --accent-soft: #B7A08B;
+  --accent-soft: #7A4A29;
   --accent-2: #154d57;
   --radius: 20px;
   --shadow: 0 16px 35px rgba(21, 77, 87, 0.14);
@@ -81,7 +81,7 @@ body {
   height: 300px;
   right: -70px;
   bottom: 15%;
-  background: rgba(183, 160, 139, 0.45);
+  background: rgba(122, 74, 41, 0.45);
   animation: float 12s ease-in-out infinite;
 }
 
@@ -237,7 +237,7 @@ body {
 }
 
 .hero .eyebrow {
-  color: #B7A08B;
+  color: #7A4A29;
 }
 
 .hero-title {
@@ -324,7 +324,7 @@ body {
 }
 
 .section-head .eyebrow {
-  color: #B7A08B;
+  color: #7A4A29;
 }
 
 .glass-card {
