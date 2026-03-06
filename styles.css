@@ -94,17 +94,6 @@ body {
   border-bottom: 1px solid rgba(43, 103, 119, 0.17);
 }
 
-.site-header::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 3px;
-  background: linear-gradient(90deg, #2b6777, #52ab98, #c8d8e4);
-  opacity: 0.45;
-}
-
 .nav-wrap {
   display: flex;
   align-items: center;
@@ -316,19 +305,6 @@ body {
   box-shadow: var(--shadow);
   padding: 1.25rem 1.25rem;
   backdrop-filter: blur(7px);
-  position: relative;
-}
-
-.glass-card::before {
-  content: "";
-  position: absolute;
-  left: 1rem;
-  right: 1rem;
-  top: 0;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(43, 103, 119, 0.55), rgba(82, 171, 152, 0.35));
-  border-radius: 999px;
-  opacity: 0.65;
 }
 
 .glass-card h3 {
@@ -383,12 +359,12 @@ body {
 }
 
 .role-meta {
-  margin: 0 0 0.45rem;
+  margin: 0.2rem 0 0.45rem;
   color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  text-transform: none;
+  letter-spacing: 0.01em;
   font-weight: 700;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
 }
 
 .experience-skills {
