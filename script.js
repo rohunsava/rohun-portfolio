@@ -16,11 +16,11 @@ const projects = [
     name: "Fantasy Basketball Calculator",
     started: "May 2025",
     summary:
-      "Built an interactive fantasy basketball calculator to evaluate roster value, compare trade outcomes, and optimize category-based decision making, and completed the first full release in May 2025.",
+      "Built an interactive fantasy basketball calculator to evaluate roster value, compare trade outcomes, and optimize category-based decision making.",
     tags: ["JavaScript", "Data Modeling", "Sports Analytics", "Decision Support"],
     href: "./projects/fantasy-basketball-calculator.html",
     placeholder: "Fantasy Calculator Preview",
-    users: "Fantasy basketball players, league managers, and strategy-focused users",
+    users: "League managers and strategy-focused users",
     dataSources: "Player statistics, league scoring rules, and historical matchup context",
     methods: "Weighted category scoring, normalization logic, and scenario-based comparison",
     outcome: "Completed a decision-support tool that improves lineup, waiver, and trade evaluation speed"

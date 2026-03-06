@@ -366,7 +366,7 @@ body {
   margin: 0;
   font-family: "Sora", "Avenir Next", sans-serif;
   font-size: clamp(1.5rem, 4vw, 2.2rem);
-  color: var(--heading-brown);
+  color: var(--accent);
 }
 
 .section-head p {
@@ -497,6 +497,15 @@ body {
   color: var(--accent);
   border: 1px solid rgba(21, 77, 87, 0.25);
   font-size: 0.84rem;
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.chip-list span:hover {
+  transform: translateY(-1px);
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+  box-shadow: 0 8px 14px rgba(21, 77, 87, 0.2);
 }
 
 .line-list {
