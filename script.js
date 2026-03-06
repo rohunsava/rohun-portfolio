@@ -8,7 +8,9 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "Responsive UI"],
     href: "./projects/personal-data-analyst-landing-page.html",
     preview:
-      "Preview: Scope, design decisions, implementation notes, deployment workflow, and upcoming iteration log."
+      "Preview: Scope, design decisions, implementation notes, deployment workflow, and upcoming iteration log.",
+    placeholder: "Portfolio UI Preview",
+    audience: ["Hiring Teams", "Recruiters", "Stakeholders"]
   },
   {
     name: "Service KPI Intelligence Dashboard",
@@ -19,7 +21,9 @@ const projects = [
     tags: ["Power BI", "SQL", "KPI Reporting"],
     href: "./projects/service-kpi-intelligence-dashboard.html",
     preview:
-      "Preview: KPI framework, metric definitions, data model approach, and phased dashboard roadmap."
+      "Preview: KPI framework, metric definitions, data model approach, and phased dashboard roadmap.",
+    placeholder: "KPI Dashboard Mock",
+    audience: ["Service Leaders", "Operations", "BI Team"]
   },
   {
     name: "Cost Variance & Expense Insights Model",
@@ -30,7 +34,9 @@ const projects = [
     tags: ["Excel", "Financial Analysis", "Forecasting"],
     href: "./projects/cost-variance-expense-insights-model.html",
     preview:
-      "Preview: variance drivers, forecast assumptions, scenario logic, and decision-ready reporting outputs."
+      "Preview: variance drivers, forecast assumptions, scenario logic, and decision-ready reporting outputs.",
+    placeholder: "Variance Model Preview",
+    audience: ["Finance", "Branch Managers", "Executives"]
   },
   {
     name: "Technician Training Impact Analysis",
@@ -41,7 +47,9 @@ const projects = [
     tags: ["Operational Analytics", "Data Storytelling", "Visualization"],
     href: "./projects/technician-training-impact-analysis.html",
     preview:
-      "Preview: workforce effectiveness indicators, before-and-after analysis design, and implementation plan."
+      "Preview: workforce effectiveness indicators, before-and-after analysis design, and implementation plan.",
+    placeholder: "Impact Analysis Preview",
+    audience: ["Product Support", "Training Teams", "Leadership"]
   }
 ];
 
@@ -49,12 +57,17 @@ const projectsGrid = document.getElementById("projects-grid");
 
 if (projectsGrid) {
   projects.forEach((project) => {
-    const card = document.createElement("a");
-    card.className = "project-card project-link reveal";
-    card.href = project.href;
-    card.setAttribute("aria-label", `Open ${project.name} project page`);
+    const card = document.createElement("article");
+    card.className = "project-card reveal";
     card.innerHTML = `
-      <div class="project-preview">${project.preview}</div>
+      <div class="project-preview-card" aria-hidden="true">
+        <div class="preview-placeholder">${project.placeholder}</div>
+        <p class="preview-copy">${project.preview}</p>
+        <p class="preview-label">Clients / Users</p>
+        <div class="audience-badges">
+          ${project.audience.map((item) => `<span>${item}</span>`).join("")}
+        </div>
+      </div>
       <div class="project-top">
         <span class="status ${project.statusClass}">${project.status}</span>
       </div>
@@ -63,7 +76,9 @@ if (projectsGrid) {
       <div class="project-tags">
         ${project.tags.map((tag) => `<span>${tag}</span>`).join("")}
       </div>
-      <p class="project-hint">View project documentation page</p>
+      <a class="project-doc-btn" href="${project.href}" aria-label="Open ${project.name} documentation page">
+        View Project Documentation Page
+      </a>
     `;
     projectsGrid.appendChild(card);
   });
