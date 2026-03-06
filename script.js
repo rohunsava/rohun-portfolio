@@ -1,16 +1,16 @@
 const projects = [
   {
-    name: "Personal Data Analyst Landing Page",
+    name: "Personal Portfolio",
     started: "Mar 2026",
     summary:
-      "Designed and developed a modern personal landing page to present analytics experience, skills, and upcoming project portfolio work.",
+      "Designed and shipped a production-ready personal portfolio with a modern UI system, project case-study architecture, and performance/accessibility hardening for recruiter and hiring-manager workflows.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive UI"],
     href: "./projects/personal-data-analyst-landing-page.html",
     placeholder: "Portfolio UI Preview",
     users: "Hiring teams, recruiters, and collaborators",
     dataSources: "LinkedIn profile data, resume content, and project planning notes",
     methods: "Responsive UI architecture, accessibility-first CSS, and interaction design",
-    outcome: "Deployed a polished portfolio experience with clear navigation and strong conversion flow"
+    outcome: "Released a portfolio with Lighthouse 100 performance, Lighthouse 100 accessibility, and a measurable reduction in page asset weight"
   },
   {
     name: "Fantasy Basketball Calculator",

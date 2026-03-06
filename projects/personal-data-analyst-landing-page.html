@@ -3,27 +3,240 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Data Analyst Landing Page | Rohun Savanur</title>
+    <title>Personal Portfolio Case Study | Rohun Savanur</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./project-doc.css?v=20260306-2512" />
+    <link rel="stylesheet" href="./project-doc.css?v=20260306-2710" />
   </head>
   <body>
     <main class="container doc-wrap">
-      <p class="eyebrow">Project Documentation</p>
-      <h1>Personal Data Analyst Landing Page</h1>
-      <article class="doc-card">
+      <p class="eyebrow">Case Study</p>
+      <h1>Personal Portfolio</h1>
+      <p class="doc-lead">
+        End-to-end design, engineering, and deployment of a high-conversion personal portfolio
+        built to showcase analytics experience, project depth, and production-level front-end
+        quality for recruiters and hiring teams.
+      </p>
+
+      <article class="doc-card case-section">
+        <h2>Project Snapshot</h2>
+        <div class="meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">Role</span>
+            <span class="meta-value">Product Designer, Front-End Engineer, Prompt Engineer</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Timeline</span>
+            <span class="meta-value">March 2026, iterative multi-release delivery</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Audience</span>
+            <span class="meta-value">Recruiters, hiring managers, analytics leaders</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Primary Goal</span>
+            <span class="meta-value">Convert profile credibility into interview-ready proof of work</span>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="https://rohunsava.github.io/rohun-portfolio/" target="_blank" rel="noreferrer">View Live Site</a>
+          <a class="btn btn-ghost" href="https://github.com/rohunsava/rohun-portfolio" target="_blank" rel="noreferrer">View GitHub Repo</a>
+          <a class="btn btn-ghost" href="../index.html#projects">Back To Projects</a>
+        </div>
+      </article>
+
+      <article class="doc-card case-section">
+        <h2>Problem Statement</h2>
         <p>
-          Full project documentation is coming soon while I finalize implementation notes,
-          design decisions, and iteration history for this portfolio build.
+          The initial need was a portfolio that looked professional and differentiated, while
+          staying easy to deploy and maintain. It also needed to support ongoing project
+          documentation, communicate measurable business impact, and be optimized for both
+          desktop and mobile experiences.
         </p>
         <ul class="doc-list">
-          <li>Status: Documentation in progress</li>
-          <li>Planned sections: Scope, architecture, deployment, next improvements</li>
+          <li>Present analytics experience in a clean, executive-ready format.</li>
+          <li>Create a scalable project section with standalone documentation pages.</li>
+          <li>Build a modern visual system with consistent hierarchy and stronger brand signal.</li>
+          <li>Harden accessibility and performance to production standards.</li>
+        </ul>
+      </article>
+
+      <article class="doc-card case-section">
+        <h2>Lifecycle Overview</h2>
+        <figure class="diagram">
+          <img
+            src="../assets/case-study/portfolio-lifecycle.svg"
+            alt="Portfolio lifecycle diagram showing strategy, design, build, quality assurance, deployment, and iteration phases."
+            loading="lazy"
+            width="1280"
+            height="720"
+          />
+          <figcaption>
+            Six-stage lifecycle used for structured delivery from discovery to deployment.
+          </figcaption>
+        </figure>
+        <ol class="timeline-list">
+          <li>Discovery and information architecture planning from profile content.</li>
+          <li>Visual direction creation with explicit palette, typography, and spacing rules.</li>
+          <li>Implementation of semantic HTML, modular CSS, and dynamic JavaScript project cards.</li>
+          <li>Rapid refinement loops for section order, text hierarchy, spacing, and CTA flows.</li>
+          <li>Accessibility hardening (skip link, keyboard focus, heading order, contrast checks).</li>
+          <li>Performance hardening and production deploy via GitHub Pages CI workflow.</li>
+        </ol>
+      </article>
+
+      <article class="doc-card case-section">
+        <h2>Prompt Engineering Approach</h2>
+        <p>
+          This project was delivered using a structured prompt engineering workflow to turn
+          business goals into implementation-ready front-end updates. Prompts were sequenced by
+          objective, constraints, implementation, evaluation, and refinement to reduce rework
+          and preserve consistency across design and code decisions.
+        </p>
+        <figure class="diagram">
+          <img
+            src="../assets/case-study/prompt-engineering-loop.svg"
+            alt="Prompt engineering loop diagram showing objective, constraint, implementation, evaluation, refinement, and release prompts."
+            loading="lazy"
+            width="1280"
+            height="720"
+          />
+          <figcaption>
+            Repeatable prompt loop used to converge on higher-quality UI and production outcomes.
+          </figcaption>
+        </figure>
+        <div class="case-grid">
+          <div class="case-card">
+            <h3>Prompt Pattern: Design Direction</h3>
+            <p>
+              Enforced specific color hex values, section hierarchy, UI accents, and navigation
+              behavior to produce a cohesive brand-aligned interface.
+            </p>
+          </div>
+          <div class="case-card">
+            <h3>Prompt Pattern: Content Structuring</h3>
+            <p>
+              Transformed generic project descriptions into fixed schema summaries:
+              Users, Data sources, Methods, Outcome.
+            </p>
+          </div>
+          <div class="case-card">
+            <h3>Prompt Pattern: Quality Gates</h3>
+            <p>
+              Added explicit accessibility and performance hardening prompts to force measurable
+              validation before release.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="doc-card case-section">
+        <h2>Models, Software, and Platforms</h2>
+        <div class="chip-list">
+          <span>OpenAI GPT-5 Codex (prompt-guided implementation)</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript (vanilla)</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>GitHub Actions</span>
+          <span>GitHub Pages</span>
+          <span>Lighthouse</span>
+          <span>Credential.net outbound links</span>
+        </div>
+      </article>
+
+      <article class="doc-card case-section">
+        <h2>Methods and Implementation Details</h2>
+        <div class="case-grid">
+          <div class="case-card">
+            <h3>UX Architecture</h3>
+            <p>
+              Reordered content flow to prioritize Projects before Experience, tightened top-nav
+              behavior, and streamlined contact CTAs to reduce navigation friction.
+            </p>
+          </div>
+          <div class="case-card">
+            <h3>Visual System</h3>
+            <p>
+              Applied an intentional palette strategy with brown heading anchors and green
+              supporting text/interactive accents, plus stronger spacing rhythm and card depth.
+            </p>
+          </div>
+          <div class="case-card">
+            <h3>Componentization</h3>
+            <p>
+              Standardized reusable patterns for tool cards, project cards, experience cards, and
+              project-documentation pages to simplify future scaling.
+            </p>
+          </div>
+          <div class="case-card">
+            <h3>Accessibility Engineering</h3>
+            <p>
+              Added a skip link, visible keyboard focus system, corrected heading semantics, and
+              verified color contrast ratios for brown/green combinations.
+            </p>
+          </div>
+          <div class="case-card">
+            <h3>Performance Engineering</h3>
+            <p>
+              Added preload strategy for critical fonts and hero image, compressed non-SVG assets,
+              and stabilized image dimensions to reduce LCP and CLS risk.
+            </p>
+          </div>
+          <div class="case-card">
+            <h3>Deployment Workflow</h3>
+            <p>
+              Maintained a commit-to-deploy flow on GitHub Pages to keep each refinement
+              cycle testable and visible in production quickly.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="doc-card case-section">
+        <h2>Outcomes, Results, and Indicators</h2>
+        <figure class="diagram">
+          <img
+            src="../assets/case-study/release-metrics.svg"
+            alt="Release metrics image showing Lighthouse scores, LCP, CLS, and asset reduction results."
+            loading="lazy"
+            width="1280"
+            height="720"
+          />
+          <figcaption>
+            Post-deployment performance and delivery metrics from the final release pass.
+          </figcaption>
+        </figure>
+        <div class="stat-grid">
+          <div class="stat-card"><span class="stat-value">100</span><span class="stat-label">Lighthouse Performance</span></div>
+          <div class="stat-card"><span class="stat-value">100</span><span class="stat-label">Lighthouse Accessibility</span></div>
+          <div class="stat-card"><span class="stat-value">1.6s</span><span class="stat-label">Largest Contentful Paint</span></div>
+          <div class="stat-card"><span class="stat-value">0.009</span><span class="stat-label">Cumulative Layout Shift</span></div>
+          <div class="stat-card"><span class="stat-value">0.9s</span><span class="stat-label">First Contentful Paint</span></div>
+          <div class="stat-card"><span class="stat-value">20ms</span><span class="stat-label">Max Potential FID</span></div>
+          <div class="stat-card"><span class="stat-value">-34%</span><span class="stat-label">Static Asset Payload</span></div>
+          <div class="stat-card"><span class="stat-value">~21s</span><span class="stat-label">GitHub Pages Deploy Runtime</span></div>
+        </div>
+        <ul class="doc-list">
+          <li>Asset footprint reduced from 6.7 MB to 4.5 MB (2.2 MB reduction).</li>
+          <li>Project preview UX standardized to a recruiter-friendly four-field format.</li>
+          <li>Experience section now includes quantified outcomes to improve business credibility.</li>
+          <li>Design and content refined through 20+ targeted revision cycles.</li>
+        </ul>
+      </article>
+
+      <article class="doc-card case-section">
+        <h2>Why This Matters to Employers</h2>
+        <ul class="doc-list">
+          <li>Demonstrates ownership across product thinking, front-end execution, and release engineering.</li>
+          <li>Shows ability to convert stakeholder feedback into high-quality shipped outcomes quickly.</li>
+          <li>Combines analytics storytelling with measurable UX and performance quality controls.</li>
+          <li>Provides a scalable case-study foundation for future data analysis projects.</li>
         </ul>
         <div class="actions">
           <a class="btn" href="../index.html#projects">Back To Projects</a>

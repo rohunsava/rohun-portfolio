@@ -12,6 +12,8 @@
   --accent-soft: #7A4A29;
   --line: rgba(21, 77, 87, 0.22);
   --muted: rgba(21, 77, 87, 0.88);
+  --radius: 20px;
+  --shadow: 0 16px 34px rgba(21, 77, 87, 0.14);
 }
 
 body {
@@ -25,7 +27,7 @@ body {
 }
 
 .container {
-  width: min(900px, 92vw);
+  width: min(1060px, 92vw);
   margin: 0 auto;
 }
 
@@ -45,16 +47,25 @@ body {
 h1 {
   margin: 0.8rem 0 0;
   font-family: "Sora", "Avenir Next", sans-serif;
-  font-size: clamp(1.8rem, 3.8vw, 2.5rem);
+  font-size: clamp(1.9rem, 3.8vw, 2.8rem);
+  color: var(--accent-soft);
+}
+
+.doc-lead {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  max-width: 80ch;
+  line-height: 1.72;
+  font-size: 1rem;
 }
 
 .doc-card {
-  margin-top: 1.5rem;
+  margin-top: 1.15rem;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: var(--radius);
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(254, 250, 247, 0.98));
-  box-shadow: 0 16px 34px rgba(21, 77, 87, 0.14);
-  padding: 1.35rem;
+  box-shadow: var(--shadow);
+  padding: 1.35rem 1.35rem 1.42rem;
   position: relative;
 }
 
@@ -66,13 +77,20 @@ h1 {
   top: 0;
   height: 2px;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent), var(--accent), var(--bg));
+  background: linear-gradient(90deg, var(--accent), var(--accent-soft), var(--bg));
 }
 
 .doc-card p {
   margin: 0;
   color: var(--muted);
   line-height: 1.7;
+}
+
+.case-section h2 {
+  margin: 0 0 0.9rem;
+  font-family: "Sora", "Avenir Next", sans-serif;
+  color: var(--accent-soft);
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
 }
 
 .doc-list {
@@ -83,6 +101,141 @@ h1 {
 
 .doc-list li + li {
   margin-top: 0.5rem;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.78rem;
+}
+
+.meta-item {
+  border-radius: 14px;
+  border: 1px solid rgba(21, 77, 87, 0.22);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.72rem 0.85rem;
+}
+
+.meta-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--accent-soft);
+  font-weight: 700;
+}
+
+.meta-value {
+  display: block;
+  margin-top: 0.28rem;
+  color: var(--accent);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.timeline-list {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.timeline-list li + li {
+  margin-top: 0.55rem;
+}
+
+.case-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.case-card {
+  border-radius: 14px;
+  border: 1px solid rgba(21, 77, 87, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.8rem;
+}
+
+.case-card h3 {
+  margin: 0;
+  font-family: "Sora", "Avenir Next", sans-serif;
+  color: var(--accent);
+  font-size: 0.98rem;
+}
+
+.case-card p {
+  margin-top: 0.48rem;
+  font-size: 0.9rem;
+  line-height: 1.62;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip-list span {
+  border-radius: 999px;
+  border: 1px solid rgba(21, 77, 87, 0.25);
+  background: rgba(254, 250, 247, 0.72);
+  color: var(--accent);
+  padding: 0.34rem 0.72rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.diagram {
+  margin: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(21, 77, 87, 0.2);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.6rem;
+}
+
+.diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.diagram figcaption {
+  margin-top: 0.52rem;
+  font-size: 0.82rem;
+  color: var(--accent);
+}
+
+.stat-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.stat-card {
+  border-radius: 14px;
+  border: 1px solid rgba(21, 77, 87, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.75rem 0.8rem;
+}
+
+.stat-value {
+  display: block;
+  font-family: "Sora", "Avenir Next", sans-serif;
+  color: var(--accent-soft);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  display: block;
+  margin-top: 0.22rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  line-height: 1.4;
 }
 
 .actions {
@@ -103,10 +256,35 @@ h1 {
   padding: 0.66rem 1rem;
   background: linear-gradient(118deg, var(--accent), var(--accent));
   color: #FFFFFF;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(21, 77, 87, 0.2);
 }
 
 .btn-ghost {
   color: var(--accent);
   border-color: rgba(21, 77, 87, 0.24);
   background: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 920px) {
+  .meta-grid,
+  .case-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .meta-grid,
+  .case-grid,
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
 }
