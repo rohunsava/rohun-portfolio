@@ -41,7 +41,7 @@ if (projectsGrid) {
         </div>
       </div>
       <div class="project-top">
-        <span class="project-date">Started: ${project.started}</span>
+        <span class="project-date">${project.started}</span>
       </div>
       <h3>${project.name}</h3>
       <p>${project.summary}</p>
