@@ -50,3 +50,10 @@ Edit `projects` in `script.js` and add new objects for each analysis project.
 Put your headshot at:
 
 `assets/profile-photo.jpg`
+
+Generated alternatives:
+
+- `assets/generated/portrait-clean-neutral.jpg`
+- `assets/generated/portrait-executive-cool.jpg`
+- `assets/generated/portrait-editorial-warm.jpg`
+- `assets/generated/portrait-classic-bw.jpg`
