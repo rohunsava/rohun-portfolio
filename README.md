@@ -16,10 +16,10 @@ Then open:
 
 ## One-Click Deploy
 
-After the GitHub repo is live, these buttons deploy instantly:
+With this repo, these buttons deploy instantly:
 
-- Netlify: `https://app.netlify.com/start/deploy?repository=<REPO_URL>`
-- Vercel: `https://vercel.com/new/clone?repository-url=<REPO_URL>`
+- Netlify: `https://app.netlify.com/start/deploy?repository=https://github.com/rohunsava/rohun-portfolio`
+- Vercel: `https://vercel.com/new/clone?repository-url=https://github.com/rohunsava/rohun-portfolio`
 
 ## Easy Deployment Options
 
