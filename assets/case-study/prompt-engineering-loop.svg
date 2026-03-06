@@ -12,13 +12,13 @@
   </defs>
 
   <rect width="1280" height="720" fill="url(#bg2)"/>
-  <text x="72" y="72" fill="#7A4A29" font-family="Sora, Arial, sans-serif" font-size="40" font-weight="700">Prompt Engineering Workflow</text>
+  <text x="72" y="72" fill="#154d57" font-family="Sora, Arial, sans-serif" font-size="40" font-weight="700">Prompt Engineering Workflow</text>
   <text x="72" y="106" fill="#154d57" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="19">Repeatable process used to move from request to validated production outcome</text>
 
   <g font-family="Plus Jakarta Sans, Arial, sans-serif" filter="url(#shadow2)">
     <g transform="translate(70,160)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">1. Objective Prompt</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">1. Objective Prompt</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Define user request, constraints, and outcome.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Establish quality bar for visual and technical fit.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Set scope for the current delivery iteration.</text>
@@ -26,7 +26,7 @@
 
     <g transform="translate(460,160)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">2. Constraint Prompt</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">2. Constraint Prompt</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Apply color, spacing, typography, and UX rules.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Require semantic structure and consistency.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Prevent design drift across sections/components.</text>
@@ -34,7 +34,7 @@
 
     <g transform="translate(850,160)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">3. Build Prompt</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">3. Build Prompt</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Generate concrete HTML, CSS, and JS edits.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Update content structure and interaction states.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Preserve deploy-safe, production-ready output.</text>
@@ -42,7 +42,7 @@
 
     <g transform="translate(70,380)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">6. Release Prompt</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">6. Release Prompt</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Commit and deploy updates to GitHub Pages.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Verify run status and publish the live result.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Capture improvements for the next cycle.</text>
@@ -50,7 +50,7 @@
 
     <g transform="translate(460,380)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">5. Refinement Prompt</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">5. Refinement Prompt</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Apply targeted edits from user feedback.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Tune copy, spacing, hierarchy, and flow details.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Iterate quickly without breaking consistency.</text>
@@ -58,7 +58,7 @@
 
     <g transform="translate(850,380)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">4. Evaluation Prompt</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">4. Evaluation Prompt</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Run accessibility and contrast validation.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Audit performance metrics and layout stability.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Flag regressions before release.</text>

@@ -226,6 +226,44 @@ h1 {
   line-height: 1.4;
 }
 
+.metric-definitions {
+  margin-top: 1rem;
+}
+
+.metric-definitions h3 {
+  margin: 0 0 0.6rem;
+  font-family: "Sora", "Avenir Next", sans-serif;
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.metric-card {
+  border-radius: 12px;
+  border: 1px solid rgba(21, 77, 87, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.72rem 0.76rem;
+}
+
+.metric-card h4 {
+  margin: 0;
+  font-family: "Sora", "Avenir Next", sans-serif;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.metric-card p {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.52;
+}
+
 .actions {
   margin-top: 1.2rem;
   display: flex;
@@ -267,12 +305,17 @@ h1 {
   .stat-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 680px) {
   .meta-grid,
   .case-grid,
-  .stat-grid {
+  .stat-grid,
+  .metric-grid {
     grid-template-columns: 1fr;
   }
 }

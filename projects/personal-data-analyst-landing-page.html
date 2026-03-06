@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./project-doc.css?v=20260306-2736" />
+    <link rel="stylesheet" href="./project-doc.css?v=20260306-2748" />
   </head>
   <body>
     <main class="container doc-wrap">
@@ -150,54 +150,6 @@
       </article>
 
       <article class="doc-card case-section">
-        <h2>Methods and Implementation Details</h2>
-        <div class="case-grid">
-          <div class="case-card">
-            <h3>UX Architecture</h3>
-            <p>
-              Reordered content flow to prioritize Projects before Experience, tightened top-nav
-              behavior, and streamlined contact CTAs to reduce navigation friction.
-            </p>
-          </div>
-          <div class="case-card">
-            <h3>Visual System</h3>
-            <p>
-              Applied an intentional palette strategy with brown heading anchors and green
-              supporting text/interactive accents, plus stronger spacing rhythm and card depth.
-            </p>
-          </div>
-          <div class="case-card">
-            <h3>Componentization</h3>
-            <p>
-              Standardized reusable patterns for tool cards, project cards, experience cards, and
-              project-documentation pages to simplify future scaling.
-            </p>
-          </div>
-          <div class="case-card">
-            <h3>Accessibility Engineering</h3>
-            <p>
-              Added a skip link, visible keyboard focus system, corrected heading semantics, and
-              verified color contrast ratios for brown/green combinations.
-            </p>
-          </div>
-          <div class="case-card">
-            <h3>Performance Engineering</h3>
-            <p>
-              Added preload strategy for critical fonts and hero image, compressed non-SVG assets,
-              and stabilized image dimensions to reduce LCP and CLS risk.
-            </p>
-          </div>
-          <div class="case-card">
-            <h3>Deployment Workflow</h3>
-            <p>
-              Maintained a commit-to-deploy flow on GitHub Pages to keep each refinement
-              cycle testable and visible in production quickly.
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="doc-card case-section">
         <h2>Outcomes, Results, and Indicators</h2>
         <figure class="diagram">
           <img
@@ -220,6 +172,35 @@
           <div class="stat-card"><span class="stat-value">20ms</span><span class="stat-label">Max Potential FID</span></div>
           <div class="stat-card"><span class="stat-value">-34%</span><span class="stat-label">Static Asset Payload</span></div>
           <div class="stat-card"><span class="stat-value">~21s</span><span class="stat-label">GitHub Pages Deploy Runtime</span></div>
+        </div>
+        <div class="metric-definitions">
+          <h3>Metric Glossary</h3>
+          <div class="metric-grid">
+            <article class="metric-card">
+              <h4>LCP</h4>
+              <p>Largest Contentful Paint measures how quickly the main visible content appears.</p>
+            </article>
+            <article class="metric-card">
+              <h4>CLS</h4>
+              <p>Cumulative Layout Shift tracks unexpected visual movement while the page loads.</p>
+            </article>
+            <article class="metric-card">
+              <h4>FID</h4>
+              <p>First Input Delay estimates input responsiveness when users first interact.</p>
+            </article>
+            <article class="metric-card">
+              <h4>FCP</h4>
+              <p>First Contentful Paint marks when the first piece of content is rendered.</p>
+            </article>
+            <article class="metric-card">
+              <h4>TBT</h4>
+              <p>Total Blocking Time captures JavaScript blocking that can delay interactions.</p>
+            </article>
+            <article class="metric-card">
+              <h4>Lighthouse Scores</h4>
+              <p>Overall audit scores summarize quality across performance and accessibility checks.</p>
+            </article>
+          </div>
         </div>
         <ul class="doc-list">
           <li>Asset footprint reduced from 6.7 MB to 4.5 MB (2.2 MB reduction).</li>

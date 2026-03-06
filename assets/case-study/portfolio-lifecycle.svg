@@ -12,13 +12,13 @@
   </defs>
 
   <rect width="1280" height="720" fill="url(#bg)"/>
-  <text x="72" y="72" fill="#7A4A29" font-family="Sora, Arial, sans-serif" font-size="40" font-weight="700">Personal Portfolio Lifecycle</text>
+  <text x="72" y="72" fill="#154d57" font-family="Sora, Arial, sans-serif" font-size="40" font-weight="700">Personal Portfolio Lifecycle</text>
   <text x="72" y="106" fill="#154d57" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="19">Structured delivery sequence from discovery through deployment and iteration</text>
 
   <g font-family="Plus Jakarta Sans, Arial, sans-serif" filter="url(#shadow)">
     <g transform="translate(70,150)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">1. Discovery + Positioning</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">1. Discovery + Positioning</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Define audience, messaging, and page architecture.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Map LinkedIn profile data into portfolio sections.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Set conversion goals for recruiter journeys.</text>
@@ -26,7 +26,7 @@
 
     <g transform="translate(460,150)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">2. Visual System Design</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">2. Visual System Design</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Establish palette hierarchy and type scale.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Tune spacing rhythm and reusable card patterns.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Align style direction with professional branding.</text>
@@ -34,7 +34,7 @@
 
     <g transform="translate(850,150)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">3. Front-End Implementation</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">3. Front-End Implementation</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Build semantic HTML sections and responsive CSS.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Generate dynamic project cards via JavaScript.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Create dedicated project documentation pages.</text>
@@ -42,7 +42,7 @@
 
     <g transform="translate(70,360)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">4. UX + Content Iteration</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">4. UX + Content Iteration</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Reorder sections based on user review feedback.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Refine CTA language, copy clarity, and spacing.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Improve visual coherence across all components.</text>
@@ -50,7 +50,7 @@
 
     <g transform="translate(460,360)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">5. Quality Hardening</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">5. Quality Hardening</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Add skip link, focus states, and semantic order.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Run contrast checks and accessibility audits.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Optimize assets, preload critical resources.</text>
@@ -58,7 +58,7 @@
 
     <g transform="translate(850,360)">
       <rect width="360" height="142" rx="18" fill="#ffffff" stroke="#154d57" stroke-opacity="0.26"/>
-      <text x="22" y="38" fill="#7A4A29" font-size="20" font-weight="700">6. Deploy + Measure</text>
+      <text x="22" y="38" fill="#154d57" font-size="20" font-weight="700">6. Deploy + Measure</text>
       <text x="22" y="68" fill="#154d57" font-size="15">Push to GitHub and trigger Pages deployment.</text>
       <text x="22" y="92" fill="#154d57" font-size="15">Validate Lighthouse and performance indicators.</text>
       <text x="22" y="116" fill="#154d57" font-size="15">Capture outcomes and feed next iteration cycle.</text>
