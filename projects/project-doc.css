@@ -4,13 +4,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #FEFAF7;
+  --surface: #FFFFFF;
+  --text: #000000;
+  --accent: #154d57;
+  --accent-soft: #B7A08B;
+  --line: rgba(21, 77, 87, 0.22);
+  --muted: rgba(21, 77, 87, 0.88);
+}
+
 body {
   margin: 0;
   font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
-  color: #000000;
-  background: radial-gradient(circle at 16% -24%, rgba(82, 171, 152, 0.23) 0%, rgba(82, 171, 152, 0) 43%),
-    radial-gradient(circle at 105% 12%, rgba(200, 216, 228, 0.75) 0%, rgba(200, 216, 228, 0) 41%),
-    linear-gradient(160deg, #f2f2f2 0%, #ffffff 52%, #f2f2f2 100%);
+  color: var(--text);
+  background: radial-gradient(circle at 16% -24%, rgba(183, 160, 139, 0.23) 0%, rgba(183, 160, 139, 0) 43%),
+    radial-gradient(circle at 105% 12%, rgba(254, 250, 247, 0.75) 0%, rgba(254, 250, 247, 0) 41%),
+    linear-gradient(160deg, var(--bg) 0%, var(--surface) 52%, var(--bg) 100%);
   min-height: 100vh;
 }
 
@@ -27,7 +37,7 @@ body {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #2b6777;
+  color: var(--accent);
   font-size: 0.74rem;
   font-weight: 700;
 }
@@ -40,10 +50,10 @@ h1 {
 
 .doc-card {
   margin-top: 1.5rem;
-  border: 1px solid rgba(43, 103, 119, 0.2);
+  border: 1px solid var(--line);
   border-radius: 20px;
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(242, 242, 242, 0.98));
-  box-shadow: 0 16px 34px rgba(43, 103, 119, 0.14);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(254, 250, 247, 0.98));
+  box-shadow: 0 16px 34px rgba(21, 77, 87, 0.14);
   padding: 1.35rem;
   position: relative;
 }
@@ -56,19 +66,19 @@ h1 {
   top: 0;
   height: 2px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #2b6777, #52ab98, #c8d8e4);
+  background: linear-gradient(90deg, var(--accent), var(--accent-soft), var(--bg));
 }
 
 .doc-card p {
   margin: 0;
-  color: rgba(43, 103, 119, 0.88);
+  color: var(--muted);
   line-height: 1.7;
 }
 
 .doc-list {
   margin: 1rem 0 0;
   padding-left: 1.1rem;
-  color: rgba(43, 103, 119, 0.88);
+  color: var(--muted);
 }
 
 .doc-list li + li {
@@ -91,12 +101,12 @@ h1 {
   text-decoration: none;
   font-weight: 600;
   padding: 0.66rem 1rem;
-  background: linear-gradient(118deg, #2b6777, #52ab98);
-  color: #ffffff;
+  background: linear-gradient(118deg, var(--accent), var(--accent-soft));
+  color: #FFFFFF;
 }
 
 .btn-ghost {
-  color: #2b6777;
-  border-color: rgba(43, 103, 119, 0.24);
+  color: var(--accent);
+  border-color: rgba(21, 77, 87, 0.24);
   background: rgba(255, 255, 255, 0.7);
 }
