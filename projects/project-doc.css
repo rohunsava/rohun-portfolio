@@ -18,7 +18,7 @@ body {
   margin: 0;
   font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at 16% -24%, rgba(183, 160, 139, 0.23) 0%, rgba(183, 160, 139, 0) 43%),
+  background: radial-gradient(circle at 16% -24%, rgba(21, 77, 87, 0.22) 0%, rgba(21, 77, 87, 0) 43%),
     radial-gradient(circle at 105% 12%, rgba(254, 250, 247, 0.75) 0%, rgba(254, 250, 247, 0) 41%),
     linear-gradient(160deg, var(--bg) 0%, var(--surface) 52%, var(--bg) 100%);
   min-height: 100vh;
@@ -66,7 +66,7 @@ h1 {
   top: 0;
   height: 2px;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-soft), var(--bg));
+  background: linear-gradient(90deg, var(--accent), var(--accent), var(--bg));
 }
 
 .doc-card p {
@@ -101,7 +101,7 @@ h1 {
   text-decoration: none;
   font-weight: 600;
   padding: 0.66rem 1rem;
-  background: linear-gradient(118deg, var(--accent), var(--accent-soft));
+  background: linear-gradient(118deg, var(--accent), var(--accent));
   color: #FFFFFF;
 }
 
