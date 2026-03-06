@@ -215,6 +215,10 @@ body {
   font-weight: 700;
 }
 
+.hero .eyebrow {
+  color: #B7A08B;
+}
+
 .hero-title {
   font-family: "Sora", "Avenir Next", sans-serif;
   margin: 0;
