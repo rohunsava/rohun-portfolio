@@ -5,7 +5,10 @@ const projects = [
     statusClass: "status-live",
     summary:
       "Designed and developed a modern personal landing page to present analytics experience, skills, and upcoming project portfolio work.",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive UI"]
+    tags: ["HTML", "CSS", "JavaScript", "Responsive UI"],
+    href: "./projects/personal-data-analyst-landing-page.html",
+    preview:
+      "Preview: Scope, design decisions, implementation notes, deployment workflow, and upcoming iteration log."
   },
   {
     name: "Service KPI Intelligence Dashboard",
@@ -13,7 +16,10 @@ const projects = [
     statusClass: "status-progress",
     summary:
       "Analyzing service, labor, and parts performance data with interactive dashboards to surface trends, bottlenecks, and branch-level opportunities.",
-    tags: ["Power BI", "SQL", "KPI Reporting"]
+    tags: ["Power BI", "SQL", "KPI Reporting"],
+    href: "./projects/service-kpi-intelligence-dashboard.html",
+    preview:
+      "Preview: KPI framework, metric definitions, data model approach, and phased dashboard roadmap."
   },
   {
     name: "Cost Variance & Expense Insights Model",
@@ -21,7 +27,10 @@ const projects = [
     statusClass: "status-planned",
     summary:
       "Planned deep-dive analysis of expense and variance patterns with scenario modeling to support budget forecasting and management decisions.",
-    tags: ["Excel", "Financial Analysis", "Forecasting"]
+    tags: ["Excel", "Financial Analysis", "Forecasting"],
+    href: "./projects/cost-variance-expense-insights-model.html",
+    preview:
+      "Preview: variance drivers, forecast assumptions, scenario logic, and decision-ready reporting outputs."
   },
   {
     name: "Technician Training Impact Analysis",
@@ -29,7 +38,10 @@ const projects = [
     statusClass: "status-planned",
     summary:
       "Future project to evaluate how training allocation influences service productivity and operational outcomes across teams.",
-    tags: ["Operational Analytics", "Data Storytelling", "Visualization"]
+    tags: ["Operational Analytics", "Data Storytelling", "Visualization"],
+    href: "./projects/technician-training-impact-analysis.html",
+    preview:
+      "Preview: workforce effectiveness indicators, before-and-after analysis design, and implementation plan."
   }
 ];
 
@@ -37,9 +49,12 @@ const projectsGrid = document.getElementById("projects-grid");
 
 if (projectsGrid) {
   projects.forEach((project) => {
-    const card = document.createElement("article");
-    card.className = "project-card reveal";
+    const card = document.createElement("a");
+    card.className = "project-card project-link reveal";
+    card.href = project.href;
+    card.setAttribute("aria-label", `Open ${project.name} project page`);
     card.innerHTML = `
+      <div class="project-preview">${project.preview}</div>
       <div class="project-top">
         <span class="status ${project.statusClass}">${project.status}</span>
       </div>
@@ -48,6 +63,7 @@ if (projectsGrid) {
       <div class="project-tags">
         ${project.tags.map((tag) => `<span>${tag}</span>`).join("")}
       </div>
+      <p class="project-hint">View project documentation page</p>
     `;
     projectsGrid.appendChild(card);
   });

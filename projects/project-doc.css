@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  color: #112f3f;
+  background: radial-gradient(circle at 20% -20%, #c4e8ef 0%, rgba(196, 232, 239, 0) 44%),
+    radial-gradient(circle at 110% 15%, #ffe1d3 0%, rgba(255, 225, 211, 0) 40%),
+    linear-gradient(160deg, #eef7f9 0%, #e5f1f4 52%, #f8fbfc 100%);
+  min-height: 100vh;
+}
+
+.container {
+  width: min(900px, 92vw);
+  margin: 0 auto;
+}
+
+.doc-wrap {
+  padding: 4.8rem 0 2.5rem;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #116e85;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0.8rem 0 0;
+  font-family: "Sora", "Avenir Next", sans-serif;
+  font-size: clamp(1.8rem, 3.8vw, 2.5rem);
+}
+
+.doc-card {
+  margin-top: 1.5rem;
+  border: 1px solid rgba(36, 85, 108, 0.15);
+  border-radius: 20px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.82), rgba(244, 250, 253, 0.96));
+  box-shadow: 0 16px 34px rgba(23, 62, 82, 0.14);
+  padding: 1.35rem;
+}
+
+.doc-card p {
+  margin: 0;
+  color: #4a6473;
+  line-height: 1.7;
+}
+
+.doc-list {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+  color: #4a6473;
+}
+
+.doc-list li + li {
+  margin-top: 0.5rem;
+}
+
+.actions {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.66rem 1rem;
+  background: linear-gradient(118deg, #1098b1, #ff8d6a);
+  color: #fff;
+}
+
+.btn-ghost {
+  color: #184b5f;
+  border-color: rgba(55, 107, 131, 0.24);
+  background: rgba(255, 255, 255, 0.65);
+}
