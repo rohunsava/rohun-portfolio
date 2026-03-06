@@ -8,7 +8,7 @@
   --bg: #FEFAF7;
   --surface: #FFFFFF;
   --text: #000000;
-  --accent: #154d57;
+  --accent: #B7A08B;
   --accent-soft: #B7A08B;
   --line: rgba(21, 77, 87, 0.22);
   --muted: rgba(21, 77, 87, 0.88);
@@ -107,6 +107,6 @@ h1 {
 
 .btn-ghost {
   color: var(--accent);
-  border-color: rgba(21, 77, 87, 0.24);
+  border-color: rgba(183, 160, 139, 0.55);
   background: rgba(255, 255, 255, 0.7);
 }
