@@ -480,6 +480,31 @@ body {
   gap: 0.9rem;
 }
 
+.experience-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.experience-logo-wrap {
+  flex: 0 0 auto;
+  min-width: 124px;
+  max-width: 168px;
+  border-radius: 12px;
+  border: 1px solid rgba(21, 77, 87, 0.18);
+  background: rgba(255, 255, 255, 0.96);
+  padding: 0.42rem 0.55rem;
+}
+
+.experience-logo {
+  width: 100%;
+  height: 34px;
+  display: block;
+  object-fit: contain;
+  object-position: left center;
+}
+
 .experience-summary {
   margin: 0.35rem 0 0;
   color: var(--muted);
@@ -782,6 +807,16 @@ body {
   .project-preview-card {
     left: 0.2rem;
     right: 0.2rem;
+  }
+
+  .experience-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-logo-wrap {
+    min-width: 0;
+    max-width: 170px;
   }
 }
 
