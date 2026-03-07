@@ -1,88 +1,86 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
   <title id="title">Personal Portfolio Lifecycle</title>
-  <desc id="desc">Six-stage lifecycle from discovery to deployment and iteration.</desc>
+  <desc id="desc">Two-column lifecycle diagram with six steps from discovery to deployment.</desc>
 
   <rect width="1280" height="720" fill="#fefaf7"/>
-  <text x="62" y="72" fill="#154d57" font-family="Sora, Arial, sans-serif" font-size="38" font-weight="700">Personal Portfolio Lifecycle</text>
-  <text x="62" y="104" fill="#2b6777" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="18">Six-stage delivery flow with clear handoff points and quality checks</text>
+  <text x="62" y="70" fill="#154d57" font-family="Sora, Arial, sans-serif" font-size="36" font-weight="700">Personal Portfolio Lifecycle</text>
+  <text x="62" y="102" fill="#2b6777" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="18">Step-by-step delivery flow used to build and ship the portfolio</text>
 
   <g font-family="Plus Jakarta Sans, Arial, sans-serif">
-    <g transform="translate(50,130)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">1. Discovery + Positioning</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
-        <tspan x="20" dy="0">Define audience, conversion goals, and section map.</tspan>
-        <tspan x="20" dy="24">Translate profile content into portfolio-ready copy.</tspan>
-        <tspan x="20" dy="24">Set priorities for implementation and iteration.</tspan>
+    <g transform="translate(60,130)">
+      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">1. Discovery + Positioning</text>
+      <text x="20" y="60" fill="#2b6777" font-size="14">
+        <tspan x="20" dy="0">Define audience, desired outcomes, and conversion goals.</tspan>
+        <tspan x="20" dy="22">Map profile information into section-level architecture.</tspan>
+        <tspan x="20" dy="22">Prioritize implementation order for delivery speed.</tspan>
       </text>
     </g>
 
-    <g transform="translate(465,130)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">2. Visual System Design</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
-        <tspan x="20" dy="0">Build palette hierarchy and typography direction.</tspan>
-        <tspan x="20" dy="24">Standardize card patterns, spacing, and rhythm.</tspan>
-        <tspan x="20" dy="24">Align visual tone with professional positioning.</tspan>
+    <g transform="translate(700,130)">
+      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">2. Visual System Design</text>
+      <text x="20" y="60" fill="#2b6777" font-size="14">
+        <tspan x="20" dy="0">Set palette, typography, and hierarchy rules.</tspan>
+        <tspan x="20" dy="22">Build reusable card and spacing patterns.</tspan>
+        <tspan x="20" dy="22">Tune readability and visual consistency.</tspan>
       </text>
     </g>
 
-    <g transform="translate(880,130)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">3. Front-End Build</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
+    <g transform="translate(60,305)">
+      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">4. UX + Content Iteration</text>
+      <text x="20" y="60" fill="#2b6777" font-size="14">
+        <tspan x="20" dy="0">Refine section order and navigation flow.</tspan>
+        <tspan x="20" dy="22">Improve copy clarity and CTA precision.</tspan>
+        <tspan x="20" dy="22">Apply rapid updates from stakeholder feedback.</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(700,305)">
+      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">3. Front-End Build</text>
+      <text x="20" y="60" fill="#2b6777" font-size="14">
         <tspan x="20" dy="0">Implement semantic HTML and responsive CSS.</tspan>
-        <tspan x="20" dy="24">Create dynamic JavaScript project-card behaviors.</tspan>
-        <tspan x="20" dy="24">Ship dedicated project documentation pages.</tspan>
+        <tspan x="20" dy="22">Create dynamic JavaScript project components.</tspan>
+        <tspan x="20" dy="22">Build standalone project documentation pages.</tspan>
       </text>
     </g>
 
-    <g transform="translate(50,380)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">4. UX + Content Iteration</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
-        <tspan x="20" dy="0">Refine nav flow, section order, and action paths.</tspan>
-        <tspan x="20" dy="24">Improve copy hierarchy and stakeholder clarity.</tspan>
-        <tspan x="20" dy="24">Apply fast revision loops from user feedback.</tspan>
+    <g transform="translate(60,480)">
+      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">5. Quality Hardening</text>
+      <text x="20" y="60" fill="#2b6777" font-size="14">
+        <tspan x="20" dy="0">Add skip links, focus states, and semantic fixes.</tspan>
+        <tspan x="20" dy="22">Validate contrast and accessibility structure.</tspan>
+        <tspan x="20" dy="22">Optimize assets and critical load behavior.</tspan>
       </text>
     </g>
 
-    <g transform="translate(465,380)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">5. Quality Hardening</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
-        <tspan x="20" dy="0">Add skip links, focus styles, and semantic fixes.</tspan>
-        <tspan x="20" dy="24">Run accessibility and contrast verification.</tspan>
-        <tspan x="20" dy="24">Optimize assets and critical loading behavior.</tspan>
-      </text>
-    </g>
-
-    <g transform="translate(880,380)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">6. Deploy + Measure</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
-        <tspan x="20" dy="0">Push to GitHub and run Pages deployment.</tspan>
-        <tspan x="20" dy="24">Validate Lighthouse and performance targets.</tspan>
-        <tspan x="20" dy="24">Log outcomes and queue the next iteration.</tspan>
+    <g transform="translate(700,480)">
+      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">6. Deploy + Measure</text>
+      <text x="20" y="60" fill="#2b6777" font-size="14">
+        <tspan x="20" dy="0">Push to GitHub Pages and verify deployment.</tspan>
+        <tspan x="20" dy="22">Audit Lighthouse and performance indicators.</tspan>
+        <tspan x="20" dy="22">Capture learnings for the next release cycle.</tspan>
       </text>
     </g>
   </g>
 
   <g stroke="#2b6777" stroke-width="3" fill="none">
-    <line x1="400" y1="215" x2="465" y2="215"/>
-    <line x1="815" y1="215" x2="880" y2="215"/>
-    <line x1="1055" y1="300" x2="1055" y2="380"/>
-    <line x1="880" y1="465" x2="815" y2="465"/>
-    <line x1="465" y1="465" x2="400" y2="465"/>
-    <line x1="225" y1="380" x2="225" y2="300"/>
+    <line x1="580" y1="202" x2="700" y2="202"/>
+    <line x1="960" y1="275" x2="960" y2="305"/>
+    <line x1="700" y1="377" x2="580" y2="377"/>
+    <line x1="320" y1="450" x2="320" y2="480"/>
+    <line x1="580" y1="552" x2="700" y2="552"/>
   </g>
 
   <g fill="#2b6777">
-    <polygon points="459,209 475,215 459,221"/>
-    <polygon points="874,209 890,215 874,221"/>
-    <polygon points="1049,374 1055,390 1061,374"/>
-    <polygon points="821,459 805,465 821,471"/>
-    <polygon points="406,459 390,465 406,471"/>
-    <polygon points="219,306 225,290 231,306"/>
+    <polygon points="694,196 710,202 694,208"/>
+    <polygon points="954,299 960,315 966,299"/>
+    <polygon points="586,371 570,377 586,383"/>
+    <polygon points="314,474 320,490 326,474"/>
+    <polygon points="694,546 710,552 694,558"/>
   </g>
 </svg>
