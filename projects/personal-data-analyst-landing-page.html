@@ -79,6 +79,9 @@
         <h2>Lifecycle Overview</h2>
         <figure class="diagram">
           <img
+            class="theme-diagram"
+            data-light="../assets/case-study/portfolio-lifecycle.svg"
+            data-dark="../assets/case-study/portfolio-lifecycle-dark.svg"
             src="../assets/case-study/portfolio-lifecycle.svg"
             alt="Portfolio lifecycle diagram showing strategy, design, build, quality assurance, deployment, and iteration phases."
             loading="lazy"
@@ -109,6 +112,9 @@
         </p>
         <figure class="diagram">
           <img
+            class="theme-diagram"
+            data-light="../assets/case-study/prompt-engineering-loop.svg"
+            data-dark="../assets/case-study/prompt-engineering-loop-dark.svg"
             src="../assets/case-study/prompt-engineering-loop.svg"
             alt="Prompt engineering loop diagram showing objective, constraint, implementation, evaluation, refinement, and release prompts."
             loading="lazy"
@@ -242,9 +248,21 @@
         const toggle = document.getElementById("doc-theme-toggle");
         if (!toggle) return;
 
+        const themeDiagrams = document.querySelectorAll(".theme-diagram");
+
+        const syncDiagrams = (theme) => {
+          themeDiagrams.forEach((img) => {
+            const light = img.getAttribute("data-light");
+            const dark = img.getAttribute("data-dark");
+            if (!light || !dark) return;
+            img.src = theme === "dark" ? dark : light;
+          });
+        };
+
         const setLabel = (theme) => {
           toggle.textContent = theme === "dark" ? "Light Mode" : "Dark Mode";
           toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+          syncDiagrams(theme);
         };
 
         const getTheme = () => (root.getAttribute("data-theme") === "dark" ? "dark" : "light");

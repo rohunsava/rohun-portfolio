@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
-  <title id="title">Prompt Engineering Workflow</title>
-  <desc id="desc">Six-step prompt workflow with directional arrows and loopback path.</desc>
+  <title id="title">Prompt Engineering Workflow Dark</title>
+  <desc id="desc">Dark mode version of the six-step prompt engineering workflow.</desc>
 
-  <rect width="1280" height="720" fill="#ffffff"/>
-  <text x="62" y="72" fill="#154d57" font-family="Sora, Arial, sans-serif" font-size="38" font-weight="700">Prompt Engineering Workflow</text>
-  <text x="62" y="104" fill="#2b6777" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="18">Structured prompt system from objective definition to released iteration</text>
+  <rect width="1280" height="720" fill="#0f1519"/>
+  <text x="62" y="72" fill="#78c6cf" font-family="Sora, Arial, sans-serif" font-size="38" font-weight="700">Prompt Engineering Workflow</text>
+  <text x="62" y="104" fill="#bfe7ed" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="18">Structured prompt system from objective definition to released iteration</text>
 
   <g font-family="Plus Jakarta Sans, Arial, sans-serif">
     <g transform="translate(50,130)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">1. Objective Prompt</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
+      <rect width="350" height="170" rx="16" fill="#152129" stroke="#78c6cf" stroke-opacity="0.5"/>
+      <text x="20" y="36" fill="#78c6cf" font-size="19" font-weight="700">1. Objective Prompt</text>
+      <text x="20" y="66" fill="#d7edf1" font-size="15">
         <tspan x="20" dy="0">Define scope, constraints, and target outcome.</tspan>
         <tspan x="20" dy="24">Clarify the success criteria for this iteration.</tspan>
         <tspan x="20" dy="24">Align request to portfolio/business context.</tspan>
@@ -18,9 +18,9 @@
     </g>
 
     <g transform="translate(465,130)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">2. Constraint Prompt</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
+      <rect width="350" height="170" rx="16" fill="#152129" stroke="#78c6cf" stroke-opacity="0.5"/>
+      <text x="20" y="36" fill="#78c6cf" font-size="19" font-weight="700">2. Constraint Prompt</text>
+      <text x="20" y="66" fill="#d7edf1" font-size="15">
         <tspan x="20" dy="0">Apply color, hierarchy, and UX guardrails.</tspan>
         <tspan x="20" dy="24">Lock in semantic and accessibility expectations.</tspan>
         <tspan x="20" dy="24">Prevent drift across sections and components.</tspan>
@@ -28,9 +28,9 @@
     </g>
 
     <g transform="translate(880,130)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">3. Build Prompt</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
+      <rect width="350" height="170" rx="16" fill="#152129" stroke="#78c6cf" stroke-opacity="0.5"/>
+      <text x="20" y="36" fill="#78c6cf" font-size="19" font-weight="700">3. Build Prompt</text>
+      <text x="20" y="66" fill="#d7edf1" font-size="15">
         <tspan x="20" dy="0">Generate concrete HTML, CSS, and JS edits.</tspan>
         <tspan x="20" dy="24">Apply the requested content and interaction logic.</tspan>
         <tspan x="20" dy="24">Keep output deploy-safe and maintainable.</tspan>
@@ -38,9 +38,9 @@
     </g>
 
     <g transform="translate(50,380)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">6. Release Prompt</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
+      <rect width="350" height="170" rx="16" fill="#152129" stroke="#78c6cf" stroke-opacity="0.5"/>
+      <text x="20" y="36" fill="#78c6cf" font-size="19" font-weight="700">6. Release Prompt</text>
+      <text x="20" y="66" fill="#d7edf1" font-size="15">
         <tspan x="20" dy="0">Commit and deploy to GitHub Pages.</tspan>
         <tspan x="20" dy="24">Confirm workflow status and publication success.</tspan>
         <tspan x="20" dy="24">Document results and next-step improvements.</tspan>
@@ -48,9 +48,9 @@
     </g>
 
     <g transform="translate(465,380)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">5. Refinement Prompt</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
+      <rect width="350" height="170" rx="16" fill="#152129" stroke="#78c6cf" stroke-opacity="0.5"/>
+      <text x="20" y="36" fill="#78c6cf" font-size="19" font-weight="700">5. Refinement Prompt</text>
+      <text x="20" y="66" fill="#d7edf1" font-size="15">
         <tspan x="20" dy="0">Apply targeted revisions from feedback.</tspan>
         <tspan x="20" dy="24">Tune copy, spacing, and visual hierarchy.</tspan>
         <tspan x="20" dy="24">Prepare the next quality-check pass.</tspan>
@@ -58,9 +58,9 @@
     </g>
 
     <g transform="translate(880,380)">
-      <rect width="350" height="170" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="36" fill="#154d57" font-size="19" font-weight="700">4. Evaluation Prompt</text>
-      <text x="20" y="66" fill="#2b6777" font-size="15">
+      <rect width="350" height="170" rx="16" fill="#152129" stroke="#78c6cf" stroke-opacity="0.5"/>
+      <text x="20" y="36" fill="#78c6cf" font-size="19" font-weight="700">4. Evaluation Prompt</text>
+      <text x="20" y="66" fill="#d7edf1" font-size="15">
         <tspan x="20" dy="0">Run performance and accessibility checks.</tspan>
         <tspan x="20" dy="24">Verify readability, contrast, and layout stability.</tspan>
         <tspan x="20" dy="24">Catch regressions before release.</tspan>
@@ -68,7 +68,7 @@
     </g>
   </g>
 
-  <g stroke="#2b6777" stroke-width="3" fill="none">
+  <g stroke="#78c6cf" stroke-width="3" fill="none">
     <line x1="400" y1="215" x2="465" y2="215"/>
     <line x1="815" y1="215" x2="880" y2="215"/>
     <line x1="1055" y1="300" x2="1055" y2="380"/>
@@ -77,7 +77,7 @@
     <line x1="225" y1="380" x2="225" y2="300"/>
   </g>
 
-  <g fill="#2b6777">
+  <g fill="#78c6cf">
     <polygon points="459,209 475,215 459,221"/>
     <polygon points="874,209 890,215 874,221"/>
     <polygon points="1049,374 1055,390 1061,374"/>
