@@ -8,79 +8,79 @@
 
   <g font-family="Plus Jakarta Sans, Arial, sans-serif">
     <g transform="translate(60,130)">
-      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">1. Objective Prompt</text>
-      <text x="20" y="60" fill="#2b6777" font-size="14">
+      <rect width="520" height="120" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="30" fill="#154d57" font-size="18" font-weight="700">1. Objective Prompt</text>
+      <text x="20" y="54" fill="#2b6777" font-size="13">
         <tspan x="20" dy="0">Define the request scope and desired outcome.</tspan>
-        <tspan x="20" dy="22">Set quality targets for code and design output.</tspan>
-        <tspan x="20" dy="22">Anchor work to portfolio goals and audience needs.</tspan>
+        <tspan x="20" dy="19">Set quality targets for code and design output.</tspan>
+        <tspan x="20" dy="19">Anchor work to portfolio goals and audience needs.</tspan>
       </text>
     </g>
 
     <g transform="translate(700,130)">
-      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">2. Constraint Prompt</text>
-      <text x="20" y="60" fill="#2b6777" font-size="14">
+      <rect width="520" height="120" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="30" fill="#154d57" font-size="18" font-weight="700">2. Constraint Prompt</text>
+      <text x="20" y="54" fill="#2b6777" font-size="13">
         <tspan x="20" dy="0">Apply color, hierarchy, spacing, and UI rules.</tspan>
-        <tspan x="20" dy="22">Set semantic and accessibility requirements.</tspan>
-        <tspan x="20" dy="22">Keep outputs aligned with established patterns.</tspan>
+        <tspan x="20" dy="19">Set semantic and accessibility requirements.</tspan>
+        <tspan x="20" dy="19">Keep outputs aligned with established patterns.</tspan>
       </text>
     </g>
 
-    <g transform="translate(60,305)">
-      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">4. Evaluation Prompt</text>
-      <text x="20" y="60" fill="#2b6777" font-size="14">
+    <g transform="translate(60,290)">
+      <rect width="520" height="120" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="30" fill="#154d57" font-size="18" font-weight="700">4. Evaluation Prompt</text>
+      <text x="20" y="54" fill="#2b6777" font-size="13">
         <tspan x="20" dy="0">Audit accessibility, contrast, and structure.</tspan>
-        <tspan x="20" dy="22">Measure performance and layout stability.</tspan>
-        <tspan x="20" dy="22">Identify regressions before deployment.</tspan>
+        <tspan x="20" dy="19">Measure performance and layout stability.</tspan>
+        <tspan x="20" dy="19">Identify regressions before deployment.</tspan>
       </text>
     </g>
 
-    <g transform="translate(700,305)">
-      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">3. Build Prompt</text>
-      <text x="20" y="60" fill="#2b6777" font-size="14">
+    <g transform="translate(700,290)">
+      <rect width="520" height="120" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="30" fill="#154d57" font-size="18" font-weight="700">3. Build Prompt</text>
+      <text x="20" y="54" fill="#2b6777" font-size="13">
         <tspan x="20" dy="0">Generate concrete edits in HTML, CSS, and JS.</tspan>
-        <tspan x="20" dy="22">Implement requested interactions and content.</tspan>
-        <tspan x="20" dy="22">Keep changes production-safe and testable.</tspan>
+        <tspan x="20" dy="19">Implement requested interactions and content.</tspan>
+        <tspan x="20" dy="19">Keep changes production-safe and testable.</tspan>
       </text>
     </g>
 
-    <g transform="translate(60,480)">
-      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">5. Refinement Prompt</text>
-      <text x="20" y="60" fill="#2b6777" font-size="14">
+    <g transform="translate(60,450)">
+      <rect width="520" height="120" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="30" fill="#154d57" font-size="18" font-weight="700">5. Refinement Prompt</text>
+      <text x="20" y="54" fill="#2b6777" font-size="13">
         <tspan x="20" dy="0">Apply targeted updates from review feedback.</tspan>
-        <tspan x="20" dy="22">Improve clarity, spacing, and UX hierarchy.</tspan>
-        <tspan x="20" dy="22">Prepare the release-ready final pass.</tspan>
+        <tspan x="20" dy="19">Improve clarity, spacing, and UX hierarchy.</tspan>
+        <tspan x="20" dy="19">Prepare the release-ready final pass.</tspan>
       </text>
     </g>
 
-    <g transform="translate(700,480)">
-      <rect width="520" height="145" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
-      <text x="20" y="34" fill="#154d57" font-size="19" font-weight="700">6. Release Prompt</text>
-      <text x="20" y="60" fill="#2b6777" font-size="14">
+    <g transform="translate(700,450)">
+      <rect width="520" height="120" rx="16" fill="#ffffff" stroke="#2b6777" stroke-opacity="0.3"/>
+      <text x="20" y="30" fill="#154d57" font-size="18" font-weight="700">6. Release Prompt</text>
+      <text x="20" y="54" fill="#2b6777" font-size="13">
         <tspan x="20" dy="0">Commit changes and deploy to GitHub Pages.</tspan>
-        <tspan x="20" dy="22">Confirm pipeline success and publish results.</tspan>
-        <tspan x="20" dy="22">Capture follow-up items for the next cycle.</tspan>
+        <tspan x="20" dy="19">Confirm pipeline success and publish results.</tspan>
+        <tspan x="20" dy="19">Capture follow-up items for the next cycle.</tspan>
       </text>
     </g>
   </g>
 
   <g stroke="#2b6777" stroke-width="3" fill="none">
-    <line x1="580" y1="202" x2="700" y2="202"/>
-    <line x1="960" y1="275" x2="960" y2="305"/>
-    <line x1="700" y1="377" x2="580" y2="377"/>
-    <line x1="320" y1="450" x2="320" y2="480"/>
-    <line x1="580" y1="552" x2="700" y2="552"/>
+    <line x1="580" y1="190" x2="700" y2="190"/>
+    <line x1="960" y1="250" x2="960" y2="290"/>
+    <line x1="700" y1="350" x2="580" y2="350"/>
+    <line x1="320" y1="410" x2="320" y2="450"/>
+    <line x1="580" y1="510" x2="700" y2="510"/>
   </g>
 
   <g fill="#2b6777">
-    <polygon points="694,196 710,202 694,208"/>
-    <polygon points="954,299 960,315 966,299"/>
-    <polygon points="586,371 570,377 586,383"/>
-    <polygon points="314,474 320,490 326,474"/>
-    <polygon points="694,546 710,552 694,558"/>
+    <polygon points="694,184 710,190 694,196"/>
+    <polygon points="954,284 960,300 966,284"/>
+    <polygon points="586,344 570,350 586,356"/>
+    <polygon points="314,444 320,460 326,444"/>
+    <polygon points="694,504 710,510 694,516"/>
   </g>
 </svg>

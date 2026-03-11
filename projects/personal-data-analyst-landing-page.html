@@ -20,11 +20,18 @@
         } catch (_) {}
       })();
     </script>
-    <link rel="stylesheet" href="./project-doc.css?v=20260307-0001" />
+    <link rel="stylesheet" href="./project-doc.css?v=20260311-0001" />
   </head>
   <body>
-    <a href="../index.html#top" class="doc-brand" aria-label="Back to home">RS</a>
-    <button class="doc-theme-toggle" id="doc-theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">Dark Mode</button>
+    <header class="doc-header">
+      <div class="container doc-nav-wrap">
+        <a href="../index.html#top" class="doc-brand" aria-label="Back to home">RS</a>
+        <div class="doc-nav-actions">
+          <button class="doc-theme-toggle" id="doc-theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">Dark Mode</button>
+          <a class="doc-contact-btn" href="../index.html#contact">Get In Touch</a>
+        </div>
+      </div>
+    </header>
     <main class="container doc-wrap">
       <p class="eyebrow">Independent Project</p>
       <h1>Personal Portfolio</h1>
@@ -231,12 +238,10 @@
         </ul>
       </article>
 
-      <article class="doc-card case-section">
-        <div class="actions">
-          <a class="btn" href="../index.html#projects">Back To Projects</a>
-          <a class="btn btn-ghost" href="../index.html">Back To Home</a>
-        </div>
-      </article>
+      <div class="actions">
+        <a class="btn" href="../index.html#projects">Back To Projects</a>
+        <a class="btn btn-ghost" href="../index.html">Back To Home</a>
+      </div>
     </main>
       <script>
       (() => {
